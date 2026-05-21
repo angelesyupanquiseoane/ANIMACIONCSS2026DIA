@@ -1,0 +1,128 @@
+<html>
+    <head>
+        <title></title>
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+
+            .contenedor{
+                width: 800px;
+                height: 300px;
+                border: 1px solid black ;
+                margin: 0 auto;
+                position: relative; /* para afuera */
+                overflow: hidden;
+            }
+            .cuadrito{
+                width: 100px;
+                height: 100px;
+                position: absolute; /* para dentro se mueva el cuadro */
+                top: 0px;
+                left: 0px;
+
+                animation: cuadrito 4s forwards;
+            }
+
+            .abeja{
+                width: 100%;
+                rotate: 45deg;
+                position: absolute;
+                z-index:0;
+            }
+
+            @keyframes cuadrito{
+                0%{
+                    top: 100px;
+                    left: 0px;
+                    rotate: 45deg;
+                }
+                33%{
+                    top: 0px;
+                    left: 350px;
+                    rotate: 0deg;
+                }
+                66%{
+                    top: 200px;
+                    left: 350px;
+                    rotate: 45deg;
+                }
+                100%{
+                    top: 0px;
+                    left: 800px;
+                    rotate: 20deg;
+                }
+            }
+            
+             .cuadrito2{
+                width: 100px;
+                height: 100px;
+                position: absolute; /* para dentro se mueva el cuadro */
+                top: 0px;
+                left: 0px;
+
+                animation: cuadrito2 4s forwards 2s;
+            }
+
+            .abeja2{
+                width: 80%;
+                left: -100px;
+                position: absolute;
+                z-index:0;
+            }
+            
+            @keyframes cuadrito2{
+                0%{
+                    top: 100px;
+                    left: 0px;
+                    rotate: 45deg;
+                }
+                33%{
+                    top: 0px;
+                    left: 350px;
+                    rotate: 0deg;
+                }
+                66%{
+                    top: 200px;
+                    left: 350px;
+                    rotate: 45deg;
+                }
+                100%{
+                    top: 0px;
+                    left: 800px;
+                    rotate: 20deg;
+                }
+            }
+
+            .pradera{
+                position: absolute;
+                top: -450px;
+                left: 0px;
+                width: 100%;
+                z-index: -1;
+            }
+
+            .cielo{
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 100%;
+                z-index: -2;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="contenedor">
+            <div class="cuadrito">
+                <img class="abeja" src="img/abejita.png" alt="">
+            </div>
+            <div class="cuadrito2">
+                <img class="abeja2" src="img/abejita.png" alt="">
+            </div>
+            <img class="pradera" src="img/pradera.png" alt="">
+            <img class="cielo" src="img/cielo.png" alt="">
+        </div>
+    </body>
+</html>
