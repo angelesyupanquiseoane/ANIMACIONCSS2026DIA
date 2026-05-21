@@ -1,0 +1,248 @@
+<html>
+<head>
+    <title> Animacion 3 Css</title>
+    <style>
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .contenedor{
+        width: 400px;
+        height: 200px;
+        background-color: black;
+        border: 1px solid black;
+        position: relative;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    .cohete{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 50px;
+        left: 150px;
+        animation: cohete 1s infinite alternate;
+    }
+
+    @keyframes cohete{
+        from{
+        transform: rotate(-10deg);
+        }
+        to{
+        transform: rotate(10deg);
+        }
+    }
+
+    .cohete img{
+        width: 100px;
+        height: 100px;
+        
+    }
+    .estrellita1{
+        height: 6px;
+        width: 6px;
+        background-color: white;
+        position: absolute;
+        left: -5px;
+        animation: estrellita1 3s infinite linear;
+    }
+    @keyframes estrellita1{
+        from{
+            left: -5px;
+        }
+        to{
+            left: 405px;
+        }
+    }
+
+    .estrellita2{
+        height: 6px;
+        width: 6px;
+        background-color: white;
+        position: absolute;
+        left: -5px;
+        top: 20px;
+        animation: estrellita2 2s infinite linear;
+    }
+
+    @keyframes estrellita2{
+        from{
+            left: -100px;
+        }
+        to{
+            left: 405px;
+        }
+    }
+
+    .estrellita3{
+        height: 6px;
+        width: 6px;
+        background-color: white;
+        position: absolute;
+        top: 30px;
+        left: -5px;
+        animation: estrellita3 4s infinite linear;
+    }
+    @keyframes estrellita3{
+        from{
+            left: -120px;
+        }
+        to{
+            left: 405px;
+        }
+    }
+
+    .estrellita4{
+        height: 6px;
+        width: 6px;
+        background-color: white;
+        position: absolute;
+        top: 60px;
+        left: -5px;
+        animation: estrellita4 3s infinite linear;
+    }
+    @keyframes estrellita4{
+        from{
+            left: -150px;
+        }
+        to{
+            left: 405px;
+        }
+    }
+
+    .estrellita5{
+        height: 6px;
+        width: 6px;
+        background-color: white;
+        position: absolute;
+        top: 100px;
+        left: -5px;
+        animation: estrellita5 2.5s infinite linear;
+    }
+    @keyframes estrellita5{
+        from{
+            left: -170px;
+        }
+        to{
+            left: 405px;
+        }
+    }
+
+    .estrellita6{
+        height: 6px;
+        width: 6px;
+        background-color: white;
+        position: absolute;
+        left: -5px;
+        top: 180px;
+        animation: estrellita6 3s infinite linear;
+    }
+    @keyframes estrellita6{
+        from{
+            left: 120px;
+        }
+        to{
+            left: 405px;
+        }
+    }
+
+    .estrellita7{
+        height: 6px;
+        width: 6px;
+        background-color: white;
+        position: absolute;
+        left: -5px;
+        top: 120px;
+        animation: estrellita7 2s infinite linear;
+    }
+
+    @keyframes estrellita7{
+        from{
+            left: -150px;
+        }
+        to{
+            left: 405px;
+        }
+    }
+
+    .estrellita8{
+        height: 6px;
+        width: 6px;
+        background-color: white;
+        position: absolute;
+        top: 140px;
+        left: -5px;
+        animation: estrellita8 4s infinite linear;
+    }
+    @keyframes estrellita8{
+        from{
+            left: -120px;
+        }
+        to{
+            left: 405px;
+        }
+    }
+
+    .estrellita9{
+        height: 6px;
+        width: 6px;
+        background-color: white;
+        position: absolute;
+        top: 160px;
+        left: -5px;
+        animation: estrellita9 3s infinite linear;
+    }
+    @keyframes estrellita9{
+        from{
+            left: -150px;
+        }
+        to{
+            left: 405px;
+        }
+    }
+
+    .estrellita10{
+        height: 6px;
+        width: 6px;
+        background-color: white;
+        position: absolute;
+        top: 100px;
+        left: -5px;
+        animation: estrellita10 2.5s infinite linear;
+    }
+    @keyframes estrellita10{
+        from{
+            left: -170px;
+        }
+        to{
+            left: 405px;
+        }
+    }
+    
+
+    </style>
+</head>
+
+<body>
+    <div class="contenedor">
+
+        <div class="estrellita1"></div>
+        <div class="estrellita2"></div>
+        <div class="estrellita3"></div>
+        <div class="estrellita4"></div>
+        <div class="estrellita5"></div>
+        <div class="estrellita6"></div>
+        <div class="estrellita7"></div>
+        <div class="estrellita8"></div>
+        <div class="estrellita9"></div>
+        <div class="estrellita10"></div>
+
+        <div class="cohete">
+            <img src="img/cohete.png">
+        </div>
+
+    </div>
+</body>
+</html>
