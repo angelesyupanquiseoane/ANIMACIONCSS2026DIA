@@ -1,0 +1,212 @@
+<html>
+    <title>Animación web</title>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=Kaushan+Script&family=Lobster&display=swap" rel="stylesheet">
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+
+            .contenedor{
+                width: 1000px;
+                height: 300px;
+                position: relative;
+                margin: 0 auto;
+                border: 1px solid rgb(231, 212, 219);
+                overflow: hidden;
+            }
+
+            .marco1{
+                width: 200px;
+                height: 300px;
+                position: absolute;
+                top: 300px;
+                left: 0px;
+
+                animation: marco1 2s 1 forwards;
+                background-image: url(img/HTML.jpg);
+                background-size: cover;
+                border:2px solid rgb(231, 139, 214);
+                box-shadow:0px 0px 20px rgb(231, 139, 214);
+            }
+
+            @keyframes marco1{
+                0%{
+                    top: 300px;
+                    left: 0px;
+                    transform: rotatey(360deg);
+                    
+                }
+                100%{
+                    top: 0px;
+                    left: 0px;
+                }
+            }
+
+            .marco2{
+                width: 200px;
+                height: 300px;
+                position: absolute;
+                top: 400px;
+                left: 300px;
+
+                animation: marco2 2s 1 forwards 2s;
+                background-image: url(img/CSS1.jpg);
+                background-size: cover;
+                border:2px solid rgb(231, 139, 214);
+                box-shadow:0px 0px 20px rgb(231, 139, 214);
+            }
+
+            @keyframes marco2{
+                0%{
+                    top: -200px;
+                    left: 400px;
+                }
+                50%{
+                    top: 150px;
+                    left: 300px;
+
+                }
+                100%{
+                    top: 0px;
+                    left: 200px;
+
+                }
+            }
+
+            .marco3{
+                width: 200px;
+                height: 300px;
+                position: absolute;
+                top: 600px;
+                left: 400px;
+
+                animation: marco3 2s 1 forwards 4s;
+                background-image: url(img/JS.jpg);
+                background-size: cover;
+                border:2px solid rgb(231, 139, 214);
+                box-shadow:0px 0px 20px rgb(231, 139, 214);
+            }
+            @keyframes marco3{
+                0%{
+                    top: 300px;
+                    left: 300px;
+                }
+                100%{
+                    top: 0px;
+                    left: 400px;
+                }
+            }
+
+            .marco4{
+                width: 200px;
+                height: 300px;
+                position: absolute;
+                top: -400px;
+                left: 300px;
+
+                animation: marco4 2s 1 forwards 6s;
+                background-image: url(img/PHP.jpg);
+                background-size: cover;
+                border:2px solid rgb(231, 139, 214);
+                box-shadow:0px 0px 20px rgb(231, 139, 214);
+
+            }
+            @keyframes marco4{
+                0%{
+                    top: -300px;
+                    left: 300px;
+                }
+                50%{
+                   top: 0px;
+                left: 300px; 
+                }
+                100%{
+                    top: 0px;
+                    left: 600px;
+                }
+            }
+
+            .marco5{
+                width: 200px;
+                height: 300px;
+                position: absolute;
+                top: -400px;
+                left: 800px;
+
+                animation: marco5 2s 1 forwards 8s;
+                background-image: url(img/boostrap.jpg);
+                background-size: cover;
+                border:2px solid rgb(231, 139, 214);
+                box-shadow:0px 0px 20px rgb(231, 139, 214);
+            }
+            @keyframes marco5{
+                0%{
+                    top: -300px;
+                    left: 800px;
+                    transform: rotatey(360deg);
+                    
+                }50%{
+                    top: 300px;
+                    left: 800px;
+                }
+                100%{
+                    top: 0px;
+                    left: 800px;
+                }
+            }
+
+            .titulo{
+                position:absolute;
+                width:100%;
+                text-align:center;
+                color:rgb(235, 9, 148);
+                top: 400px;
+                font-family: "Lobster", sans-serif;
+                background:rgb(224, 170, 170);
+                
+                animation: titulo 2s 1 forwards 10s;
+            }
+            @keyframes titulo{
+                0%{
+                    top: 400px;
+                    left: 0px;
+                    opacity: 0;
+                }
+                100%{
+                    top:200px;
+                    left:0px;
+                    opacity:1;
+                }
+            }
+
+            button{
+            position: absolute;
+            left: 800px;
+            top: 400px;
+            height: 50px;
+            padding: 10px 20px;
+
+        }
+
+        </style>
+    </head>
+    <body>
+        <div class="contenedor">
+            <div class="marco1"></div>
+            <div class="marco2"></div>
+            <div class="marco3"></div>
+            <div class="marco4"></div>
+            <div class="marco5"></div>
+            <div class="titulo">
+            <h1>Tecnologías de Desarrollo Web</h1>
+            </div>
+        </div>
+        <button>
+          <a href="../index.html">volver</a>
+        </button>
+    </body>
+</html>
