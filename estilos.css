@@ -1,80 +1,64 @@
 body{
+    margin: 0;
     background-image: url(img/fondo.jpg);
     background-size: cover;
-    background-position: center;
-    margin: 0;
-    padding: 0;
+    font-family: Arial;
 }
-
 
 h1{
     text-align: center;
-    font-family: "Chewy", system-ui;
-    font-size: 55px;
-    margin-top: 30px;
-    margin-bottom: 40px;
-    text-shadow: 0 0 10px #ff69b4;
-    color: rgb(239, 86, 150);
+    margin: 20px; /* espacio alrededor del título */
+    color: rgb(230, 107, 144);
+    font-size: 50px; /* Tamaño de fuente aumentado a 40px */
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+
+    animation: titulo 6s infinite forwards;
+}
+@keyframes titulo{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
-
 .galeria{
-    width: 90%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    gap: 35px;
-    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;/* permite que los elementos se distribuyan en una fila */
+    flex-wrap: wrap;/* permite que los elementos se envuelvan en la siguiente línea si no hay espacio suficiente */
+    justify-content: center;/* permite que los elementos se centren en el contenedor */
+    gap: 40px;/* espacio entre los elementos */
 }
 
 .caja{
-    width: 300px;
-    height: 360px;
-    background: rgba(255,255,255,0.5);
-    backdrop-filter: blur(5px);
-    border-radius: 20px;
+    width: 280px;
+    background: white;
     text-align: center;
-    padding: 20px;
-    transition: 0.4s;
-    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+    padding: 10px;
+    border: 3px solid #ccc;
+    border-radius: 10px;
 }
-
-.caja:hover{
-    transform: translateY(-10px) scale(1.02);
-}
-
 
 img{
-    width: 250px;
-    height: 200px;
-    border-radius: 15px;
-    object-fit: cover;
-}
-
-img:hover{
-    transform: scale(1.03);
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
 }
 
 a{
-    display: block;
-    margin-top: 20px;
+    display: block;/* permite que el enlace ocupe toda la anchura de su contenedor */
+    margin-top: 10px;
     text-decoration: none;
-    font-size: 30px;
-    color: rgb(235, 115, 189);
-    font-family: "Poppins", sans-serif;
-    transition: 0.3s;
-}
-
-a:hover{
-    color: rgb(255, 70, 160);
+    color: rgb(245, 136, 194);
 }
 
 footer{
     text-align: center;
-    margin-top: 40px;
-    padding: 20px;
-    font-size: 20px;
-    font-family: "Poppins", sans-serif;
-    color: rgb(218, 105, 171);
-    background: rgba(255,255,255,0.4);
+    margin-top: 30px;
+    padding: 10px;
+    color: white;
+    background: rgb(230, 107, 144);
+    font-family: 'Comic Sans MS', cursive, sans-serif;
 }
