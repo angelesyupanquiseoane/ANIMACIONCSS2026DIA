@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+    background-image: url(img/fondos.avif);
+    background-size: cover;
+    font-family: Arial;
+    animation: fondo 8s infinite;
+}
+@keyframes fondo{
+    0%{
+        background-size:  100%;
+    }
+    100%{
+        background-size: 130%;
+    }
+}
+
+h1{
+    text-align: center;
+    margin: 20px; /* espacio alrededor del título */
+    color: rgb(255, 1, 77);
+    font-size: 50px; /* Tamaño de fuente aumentado a 40px */
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+
+    animation: titulo 6s infinite forwards;
+}
+@keyframes titulo{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.galeria{
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;/* permite que los elementos se distribuyan en una fila */
+    flex-wrap: wrap;/* permite que los elementos se envuelvan en la siguiente línea si no hay espacio suficiente */
+    justify-content: center;/* permite que los elementos se centren en el contenedor */
+    gap: 40px;/* espacio entre los elementos */
+}
+
+.caja{
+    width: 280px;
+    background: white;
+    text-align: center;
+    padding: 10px;
+    border: 3px solid #ccc;
+    border-radius: 10px;
+}
+
+img{
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
+}
+
+a{
+    display: block;/* permite que el enlace ocupe toda la anchura de su contenedor */
+    margin-top: 10px;
+    text-decoration: none;
+    color: rgb(245, 136, 194);
+}
+
+footer{
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    color: white;
+    background: rgb(230, 107, 144);
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
