@@ -20,7 +20,7 @@ body{
 .contenedor{
     width: 400px;
     height: 200px;
-    background-image: url(img/fondo.jpg);
+    background-image: url(../SEMANA03/img/fondo.jpg);
     background-size: cover;
     border : 1px solid black ;
     position: relative;
