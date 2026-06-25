@@ -1,6 +1,17 @@
 body{
     background-image: url(../img/fondo.png);
     background-size: cover;
+
+    animation:fondo 8s infinite alternate;
+}
+/* Animación de zoom del fondo */
+@keyframes fondo{
+    from{
+        background-size:100%;
+    }
+    to{
+        background-size:110%; /* Menos exagerado */
+    }
 }
 h1{
     text-align:center;
