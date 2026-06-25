@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+.contenedor{
+    width: 1000px;
+    height: 300px;
+    position: relative;
+    margin: 0 auto;
+    border: 1px solid rgb(231, 212, 219);
+    overflow: hidden;
+}
+.marco1{
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 300px;
+    left: 0;
+
+    background-image: url(../ANIMACION3/img/CSS1.jpg);
+    background-size: cover;
+
+    border: 2px solid rgb(231, 139, 214);
+    box-shadow: 0 0 20px rgb(231, 139, 214);
+
+    animation: marco1 2s forwards;
+}
+@keyframes marco1{
+    0%{
+        top: 300px;
+        left: 0;
+        transform: rotateY(360deg);
+    }
+
+    100%{
+        top: 0;
+        left: 0;
+    }
+}
+.marco2{
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 400px;
+    left: 300px;
+
+    background-image: url(../ANIMACION3/img/HTML.jpg);
+    background-size: cover;
+
+    border: 2px solid rgb(231, 139, 214);
+    box-shadow: 0 0 20px rgb(231, 139, 214);
+
+    animation: marco2 2s forwards 2s;
+}
+@keyframes marco2{
+    0%{
+        top: -200px;
+        left: 400px;
+    }
+
+    50%{
+        top: 150px;
+        left: 300px;
+    }
+
+    100%{
+        top: 0;
+        left: 200px;
+    }
+}
+.marco3{
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 600px;
+    left: 400px;
+
+    background-image: url(../ANIMACION3/img/JS.jpg);
+    background-size: cover;
+
+    border: 2px solid rgb(231, 139, 214);
+    box-shadow: 0 0 20px rgb(231, 139, 214);
+
+    animation: marco3 2s forwards 4s;
+}
+@keyframes marco3{
+    0%{
+        top: 300px;
+        left: 300px;
+    }
+
+    100%{
+        top: 0;
+        left: 400px;
+    }
+}
+.marco4{
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: -400px;
+    left: 300px;
+
+    background-image: url(../ANIMACION3/img/PHP.jpg);
+    background-size: cover;
+
+    border: 2px solid rgb(231, 139, 214);
+    box-shadow: 0 0 20px rgb(231, 139, 214);
+
+    animation: marco4 2s forwards 6s;
+}
+
+@keyframes marco4{
+    0%{
+        top: -300px;
+        left: 300px;
+    }
+
+    50%{
+        top: 0;
+        left: 300px;
+    }
+
+    100%{
+        top: 0;
+        left: 600px;
+    }
+}
+.marco5{
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: -400px;
+    left: 800px;
+
+    background-image: url(../ANIMACION3/img/boostrap.jpg);
+    background-size: cover;
+
+    border: 2px solid rgb(231, 139, 214);
+    box-shadow: 0 0 20px rgb(231, 139, 214);
+
+    animation: marco5 2s forwards 8s;
+}
+@keyframes marco5{
+    0%{
+        top: -300px;
+        left: 800px;
+        transform: rotateY(360deg);
+    }
+
+    50%{
+        top: 300px;
+        left: 800px;
+    }
+
+    100%{
+        top: 0;
+        left: 800px;
+    }
+}
+.titulo{
+    position: absolute;
+    width: 100%;
+    top: 400px;
+
+    text-align: center;
+    color: rgb(235, 9, 148);
+    background: rgb(224, 170, 170);
+
+    font-family: "Lobster", sans-serif;
+
+    animation: titulo 2s forwards 10s;
+}
+
+@keyframes titulo{
+    0%{
+        top: 400px;
+        left: 0;
+        opacity: 0;
+    }
+
+    100%{
+        top: 200px;
+        left: 0;
+        opacity: 1;
+    }
+}
+button{
+    position: absolute;
+    left: 750px;
+    top: 400px;
+
+    padding: 10px 20px;
+
+    background-color: rgb(230, 107, 144);
+    border: none;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
